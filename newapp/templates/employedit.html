@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>Edit Employee Details</h3>
+
+<form method="post">{% csrf_token %}
+    <label>Employeename</label>
+    <input type="text" name="name" value="{{a.name}}"><br><br>
+    <label>Salary</label>
+    <input type="number" name="salary" value="{{a.salary}}"><br><br>
+    <label>Email</label>
+    <input type="email" name="email" value="{{a.email}}"><br><br>
+    <label>Companyname</label>
+    <input type="text" name="cname" value="{{a.cname}}"><br><br>
+    <label>Designation</label>
+    <input type="text" name="dname" value="{{a.dname}}"><br><br>
+    <input type="Submit">
+</form>
+
+</body>
+</html>
